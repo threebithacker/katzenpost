@@ -62,7 +62,7 @@ EnableEphemeralClients = true
 TrustOnFirstUse = true
 
 [[Provider.Kaetzchen]]
-    Disable = false
+    Disable = true
     Capability = "echo"
     Endpoint = "+echo"
 

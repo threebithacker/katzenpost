@@ -59,9 +59,9 @@
 
 [Provider]
   [[Provider.Kaetzchen]]
+    Disable = true
     Capability = "echo"
     Endpoint = "+echo"
-    Disable = false
 
 [[Provider.CBORPluginKaetzchen]]
     Disable = false
