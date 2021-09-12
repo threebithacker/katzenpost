@@ -63,15 +63,15 @@
     Endpoint = "+echo"
     Disable = false
 
-   [[Provider.CBORPluginKaetzchen]]
-    Capability = "reunion"
-    Endpoint = "+reunion"
-    Command = "/go/bin/reunion_katzenpost_server"
+[[Provider.CBORPluginKaetzchen]]
+    Disable = false
+    Capability = "echo"
+    Endpoint = "echo"
+    Command = "/go/bin/echo"
     MaxConcurrency = 1
-    [Provider.CBORPluginKaetzchen.Config]
-      log_level = "DEBUG"
-      log = "/conf/service_logs/reunion.log"
-      s = "/conf/service_data/reunion.storage"
+  [Provider.CBORPluginKaetzchen.Config]
+    log_dir = "/conf/service_logs"
+    log_level = "DEBUG"
 
 #
 # The Management section specifies the management interface configuration.

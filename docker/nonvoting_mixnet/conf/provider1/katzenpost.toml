@@ -66,26 +66,15 @@ TrustOnFirstUse = true
     Capability = "echo"
     Endpoint = "+echo"
 
-   [[Provider.CBORPluginKaetzchen]]
-     Disable = false
-     Capability = "panda"
-     Endpoint = "+panda"
-     Command = "/go/bin/panda_server"
-     MaxConcurrency = 1
-     [Provider.CBORPluginKaetzchen.Config]
-      log_dir = "/conf/service_logs"
-      log_level = "DEBUG"
-      fileStore = "/conf/service_data/panda.storage"
-
-  [[Provider.CBORPluginKaetzchen]]
+[[Provider.CBORPluginKaetzchen]]
     Disable = false
-    Capability = "spool"
-    Endpoint = "+spool"
-    Command = "/go/bin/memspool"
+    Capability = "echo"
+    Endpoint = "echo"
+    Command = "/go/bin/echo"
     MaxConcurrency = 1
-    [Provider.CBORPluginKaetzchen.Config]
-      data_store = "/conf/service_data/memspool.storage"
-      log_dir = "/conf/service_logs"
+  [Provider.CBORPluginKaetzchen.Config]
+    log_dir = "/conf/service_logs"
+    log_level = "DEBUG"
 
 #
 # The Management section specifies the management interface configuration.
