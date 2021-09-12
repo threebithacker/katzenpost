@@ -58,16 +58,12 @@
 #
 
 [Provider]
-  [[Provider.Kaetzchen]]
-    Disable = true
-    Capability = "echo"
-    Endpoint = "+echo"
 
 [[Provider.CBORPluginKaetzchen]]
     Disable = false
     Capability = "echo"
     Endpoint = "echo"
-    Command = "/go/bin/echo"
+    Command = "/go/bin/echo_server"
     MaxConcurrency = 1
   [Provider.CBORPluginKaetzchen.Config]
     log_dir = "/conf/service_logs"
